@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>    
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app3.js"></script>
+</head>
+
+<body>
+    <div class="container" style="padding-top:100px">
+        <h1>계좌의 잔액 조회</h1>
+                <table class="table table-bordered form-inline">
+                    <tr>
+                        <td>1. 금액 전송</td>
+                    </tr>
+                    <tr>    
+                        <td>
+                            수신계정주소 :
+                            <input type="text" id="toAddr" placeholder="0x00000000" class="form-control" style="width:400px"><br/>
+                            보낼금액 :
+                            <input type="text" id="toValue"  class="form-control" style="width:200px">
+                            <button class="btn btn-primary" id="transferBtn">전송</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2. 계좌 잔고</td>
+                    </tr>
+                    <tr>    
+                        <td>
+                            Sender 잔액 : <span id="fromBalance"></span> ether
+                            <button class="btn btn-primary" id="fromBalanceBtn">fromBalance</button>
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td>
+                            Receiver 잔액 : <span id="toBalance"></span> ether
+                            <button class="btn btn-primary" id="toBalanceBtn">toBalance</button>
+                        </td>
+                    </tr>
+                </table>
+    </div>
+
+</body>
+</html>
